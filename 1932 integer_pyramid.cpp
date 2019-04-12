@@ -56,6 +56,5 @@ int searchMax(int *ary, int n)
       max = ary[i];
     }
   }
-
   return max;
 }
