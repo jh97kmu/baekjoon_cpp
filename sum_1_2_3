@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+  int caseNum, num;
+  cin >> caseNum;
+  for(int i=0;i<caseNum;i++)
+  {
+    cin >> num;
+    int ary[11] = {0};
+    ary[0] = 1, ary[1] = 2, ary[2] = 4;
+
+    for(int j=3; j<num;j++)
+    {
+      ary[j] = ary[j-3] + ary[j-2] + ary[j-1];
+    }
+
+    cout << ary[num-1] << endl;
+
+  }
+
+
+  return 0;
+}
